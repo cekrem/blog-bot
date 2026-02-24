@@ -5,6 +5,7 @@ import Input.Rss as Rss
 import Output.Console as Console
 import Pages.Script as Script exposing (Script)
 import Pipeline
+import Transform.PassThrough as PassThrough
 
 
 run : Script
@@ -13,5 +14,6 @@ run =
         (Pipeline.run
             NoHistory.noop
             Rss.fetch
+            PassThrough.transform
             Console.publish
         )

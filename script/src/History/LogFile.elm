@@ -1,7 +1,7 @@
 module History.LogFile exposing (read)
 
 import BackendTask
-import Domain.Post exposing (PublishedPost)
+import Domain.PublishedPost exposing (PublishedPost)
 import Set exposing (Set)
 
 

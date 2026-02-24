@@ -1,10 +1,11 @@
 module Output.Port exposing (Output)
 
 import BackendTask exposing (BackendTask)
-import Domain.Post exposing (Post, PublishedPost)
+import Domain.PublishedPost exposing (PublishedPost)
+import Domain.SocialPost exposing (SocialPost)
 import FatalError exposing (FatalError)
 import Set exposing (Set)
 
 
 type alias Output =
-    List Post -> BackendTask FatalError (Set PublishedPost)
+    List SocialPost -> BackendTask FatalError (Set PublishedPost)

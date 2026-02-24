@@ -1,7 +1,7 @@
 module History.Port exposing (HistoryIO, Read, Write)
 
 import BackendTask exposing (BackendTask)
-import Domain.Post exposing (PublishedPost)
+import Domain.PublishedPost exposing (PublishedPost)
 import FatalError exposing (FatalError)
 import Set exposing (Set)
 

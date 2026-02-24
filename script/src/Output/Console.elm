@@ -1,20 +1,21 @@
 module Output.Console exposing (publish)
 
 import BackendTask
-import Domain.Post exposing (Post, toPublished)
+import Domain.PublishedPost exposing (toPublished)
+import Domain.SocialPost exposing (SocialPost)
 import Output.Port exposing (Output)
 import Pages.Script as Script
 
 
 publish : Output
-publish posts =
-    posts
-        |> List.map formatPost
+publish socialPosts =
+    socialPosts
+        |> List.map formatSocialPost
         |> String.join "\n\n"
         |> Script.log
-        |> BackendTask.map (always (posts |> toPublished))
+        |> BackendTask.map (always (socialPosts |> toPublished))
 
 
-formatPost : Post -> String
-formatPost post =
-    "## [" ++ post.title ++ "](" ++ post.link ++ "):\n\n" ++ post.description
+formatSocialPost : SocialPost -> String
+formatSocialPost socialPost =
+    socialPost.body ++ "\n" ++ socialPost.link

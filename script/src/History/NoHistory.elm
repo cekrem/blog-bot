@@ -1,7 +1,7 @@
 module History.NoHistory exposing (noop)
 
 import BackendTask exposing (BackendTask)
-import Domain.Post exposing (PublishedPost)
+import Domain.PublishedPost exposing (PublishedPost)
 import FatalError exposing (FatalError)
 import History.Port exposing (HistoryIO)
 import Pages.Script as Script
