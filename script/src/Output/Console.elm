@@ -1,6 +1,7 @@
 module Output.Console exposing (publish)
 
-import Domain.Post exposing (Post)
+import BackendTask
+import Domain.Post exposing (Post, toPublished)
 import Output.Port exposing (Output)
 import Pages.Script as Script
 
@@ -11,6 +12,7 @@ publish posts =
         |> List.map formatPost
         |> String.join "\n\n"
         |> Script.log
+        |> BackendTask.map (always (posts |> toPublished))
 
 
 formatPost : Post -> String
