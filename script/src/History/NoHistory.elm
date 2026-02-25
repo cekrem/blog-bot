@@ -18,7 +18,7 @@ write publishedPost =
     publishedPost
         |> Set.toList
         |> String.join "\n"
-        |> String.append "Published these posts:\n"
+        |> String.append "Published these posts, pretending write somewhere (but doing nothing):\n"
         |> Script.log
 
 
