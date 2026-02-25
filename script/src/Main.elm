@@ -5,7 +5,8 @@ import Cli.Option as Option
 import Cli.OptionsParser as OptionsParser
 import Cli.Program as Program
 import Dict exposing (Dict)
-import FatalError exposing (FatalError)
+import FatalError
+import History.LogFile as LogFile
 import History.NoHistory as NoHistory
 import History.Port exposing (HistoryIO)
 import Input.Port exposing (Input)
@@ -51,7 +52,7 @@ programConfig =
             (OptionsParser.build CliOptions
                 |> OptionsParser.with
                     (Option.optionalKeywordArg "history"
-                        |> Option.withDefault "none"
+                        |> Option.withDefault "file"
                     )
                 |> OptionsParser.with
                     (Option.optionalKeywordArg "input"
@@ -76,6 +77,7 @@ histories : Dict String HistoryIO
 histories =
     Dict.fromList
         [ ( "none", NoHistory.noop )
+        , ( "file", LogFile.io )
         ]
 
 
