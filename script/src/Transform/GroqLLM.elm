@@ -59,9 +59,10 @@ Add the URL where you see fit within the message.
 Try to refrain from typical AI-jargon, and keep a casual (and slightly nerdy) tone.
 
 Important: Your answer should be _only_ the social media post content, no introduction before or
-conclusion after. I trust you!
+conclusion after. And no surrounding quotes, please, just the exact thing to post on social media.
 
 Post follows here:
+
   """
         ++ "Post title: "
         ++ post.title

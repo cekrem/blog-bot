@@ -12,6 +12,7 @@ import History.Port exposing (HistoryIO)
 import Input.Port exposing (Input)
 import Input.Rss as Rss
 import Output.Console as Console
+import Output.File as OutputFile
 import Output.Port exposing (Output)
 import Pages.Script as Script exposing (Script)
 import Pipeline
@@ -101,6 +102,7 @@ outputs : Dict String Output
 outputs =
     Dict.fromList
         [ ( "console", Console.publish )
+        , ( "file", OutputFile.write )
         ]
 
 
