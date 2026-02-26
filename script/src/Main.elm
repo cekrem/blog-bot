@@ -15,6 +15,7 @@ import Output.Console as Console
 import Output.Port exposing (Output)
 import Pages.Script as Script exposing (Script)
 import Pipeline
+import Transform.GroqLLM as GroqLLM
 import Transform.PassThrough as PassThrough
 import Transform.Port exposing (Transform)
 
@@ -60,7 +61,7 @@ programConfig =
                     )
                 |> OptionsParser.with
                     (Option.optionalKeywordArg "transform"
-                        |> Option.withDefault "passthrough"
+                        |> Option.withDefault "groq"
                     )
                 |> OptionsParser.with
                     (Option.optionalKeywordArg "output"
@@ -92,6 +93,7 @@ transforms : Dict String Transform
 transforms =
     Dict.fromList
         [ ( "passthrough", PassThrough.transform )
+        , ( "groq", GroqLLM.run )
         ]
 
 

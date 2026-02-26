@@ -8,4 +8,4 @@ import Set exposing (Set)
 
 
 type alias Output =
-    List SocialPost -> BackendTask FatalError (Set PublishedPost)
+    ( SocialPost, List SocialPost ) -> BackendTask FatalError (Set PublishedPost)

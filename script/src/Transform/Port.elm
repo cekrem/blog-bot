@@ -7,4 +7,4 @@ import FatalError exposing (FatalError)
 
 
 type alias Transform =
-    List Post -> BackendTask FatalError (List SocialPost)
+    ( Post, List Post ) -> BackendTask FatalError ( SocialPost, List SocialPost )

@@ -27,7 +27,7 @@ write publishedPosts =
                 publishedPosts
                     |> Set.toList
                     |> String.join "\n"
-                    |> String.append ("# " ++ timestamp ++ "\n")
+                    |> String.append ("\n\n# " ++ timestamp ++ "\n")
             )
         |> BackendTask.map (Stream.fromString >> Stream.pipe (Stream.command "tee" [ "-a", logPath ]))
         |> BackendTask.andThen Stream.run

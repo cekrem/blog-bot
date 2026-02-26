@@ -8,12 +8,12 @@ import Pages.Script as Script
 
 
 publish : Output
-publish socialPosts =
-    socialPosts
+publish ( first, rest ) =
+    (first :: rest)
         |> List.map formatSocialPost
         |> String.join "\n\n"
         |> Script.log
-        |> BackendTask.map (always (socialPosts |> toPublished))
+        |> BackendTask.map (always ((first :: rest) |> toPublished))
 
 
 formatSocialPost : SocialPost -> String

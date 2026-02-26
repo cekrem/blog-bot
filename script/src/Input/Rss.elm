@@ -16,14 +16,17 @@ fetch =
         |> BackendTask.andThen parse
 
 
-parse : String -> BackendTask FatalError (List Post)
+parse : String -> BackendTask FatalError ( Post, List Post )
 parse rawXml =
     case XD.run postsDecoder rawXml of
         Err error ->
             BackendTask.fail (FatalError.fromString error)
 
-        Ok posts ->
-            BackendTask.succeed posts
+        Ok (firstPost :: rest) ->
+            BackendTask.succeed ( firstPost, rest )
+
+        Ok [] ->
+            BackendTask.fail (FatalError.fromString "No relevant posts in RSS!")
 
 
 postsDecoder : XD.Decoder (List Post)

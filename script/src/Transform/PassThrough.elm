@@ -1,16 +1,16 @@
 module Transform.PassThrough exposing (transform)
 
-import BackendTask
 import Domain.Post exposing (Post)
 import Domain.SocialPost exposing (SocialPost)
 import Transform.Port exposing (Transform)
+import Utils.NonEmptyList exposing (ensureNonEmpty)
 
 
 transform : Transform
-transform posts =
-    posts
+transform ( first, rest ) =
+    (first :: rest)
         |> List.map fromPost
-        |> BackendTask.succeed
+        |> ensureNonEmpty
 
 
 fromPost : Post -> SocialPost

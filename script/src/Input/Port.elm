@@ -6,4 +6,4 @@ import FatalError exposing (FatalError)
 
 
 type alias Input =
-    BackendTask FatalError (List Post)
+    BackendTask FatalError ( Post, List Post )
