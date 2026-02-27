@@ -22,6 +22,9 @@ on:
         default: "bluesky"
         type: string
 
+env:
+  ELM_HOME: ${{ github.workspace }}/.elm
+
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -33,6 +36,13 @@ jobs:
           node-version: 20
 
       - run: npm install -g elm elm-pages
+
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.ELM_HOME }}
+          key: elm-${{ hashFiles('script/elm.json') }}
+          restore-keys: |
+            elm-
 
       - run: >-
           elm-pages run Main
