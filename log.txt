@@ -7,3 +7,7 @@ https://cekrem.github.io/posts/solid-in-fp-open-closed/
 
 # Sometime
 https://cekrem.github.io/posts/blog-bot/
+
+
+# 1772195948331
+https://cekrem.github.io/posts/solid-in-fp-single-responsibility/
