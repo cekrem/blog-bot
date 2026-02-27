@@ -25,6 +25,9 @@ on:
 env:
   ELM_HOME: ${{ github.workspace }}/.elm
 
+permissions:
+  contents: write
+
 jobs:
   post:
     runs-on: ubuntu-latest
