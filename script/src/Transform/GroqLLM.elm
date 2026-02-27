@@ -1,17 +1,13 @@
-module Transform.GroqLLM exposing (..)
+module Transform.GroqLLM exposing (ChatMessage, run)
 
 import BackendTask
+import BackendTask.Env as Env
 import BackendTask.Http as Http
 import Domain.Post exposing (Post)
 import Domain.SocialPost exposing (SocialPost)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Encode as Encode
 import Transform.Port exposing (Transform)
-
-
-key : String
-key =
-    "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"
 
 
 run : Transform
@@ -22,19 +18,24 @@ run ( firstPost, _ ) =
                 |> formatLLMMessage
                 |> encodeBody
     in
-    Http.request
-        { method = "POST"
-        , url = "https://api.groq.com/openai/v1/chat/completions"
-        , headers =
-            [ ( "Authorization", "Bearer " ++ key )
-            , ( "Content-Type", "application/json" )
-            ]
-        , body = body
-        , retries = Just 3
-        , timeoutInMs = Just 10000
-        }
-        (Http.expectJson responseDecoder)
+    Env.expect "GROQ_API_KEY"
         |> BackendTask.allowFatal
+        |> BackendTask.andThen
+            (\key ->
+                Http.request
+                    { method = "POST"
+                    , url = "https://api.groq.com/openai/v1/chat/completions"
+                    , headers =
+                        [ ( "Authorization", "Bearer " ++ key )
+                        , ( "Content-Type", "application/json" )
+                        ]
+                    , body = body
+                    , retries = Just 3
+                    , timeoutInMs = Just 10000
+                    }
+                    (Http.expectJson responseDecoder)
+                    |> BackendTask.allowFatal
+            )
         |> BackendTask.map
             (\llmRes ->
                 ( SocialPost llmRes firstPost.link, [] )
@@ -91,12 +92,6 @@ responseDecoder =
 
 
 -- REQUEST BODY
-
-
-type alias RequestBody =
-    { messages : List ChatMessage
-    , model : String
-    }
 
 
 type alias ChatMessage =

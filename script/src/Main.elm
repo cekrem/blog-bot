@@ -11,6 +11,7 @@ import History.NoHistory as NoHistory
 import History.Port exposing (HistoryIO)
 import Input.Port exposing (Input)
 import Input.Rss as Rss
+import Output.Bluesky as Bluesky
 import Output.Console as Console
 import Output.File as OutputFile
 import Output.Port exposing (Output)
@@ -54,7 +55,7 @@ programConfig =
             (OptionsParser.build CliOptions
                 |> OptionsParser.with
                     (Option.optionalKeywordArg "history"
-                        |> Option.withDefault "file"
+                        |> Option.withDefault "none"
                     )
                 |> OptionsParser.with
                     (Option.optionalKeywordArg "input"
@@ -66,7 +67,7 @@ programConfig =
                     )
                 |> OptionsParser.with
                     (Option.optionalKeywordArg "output"
-                        |> Option.withDefault "console"
+                        |> Option.withDefault "file"
                     )
             )
 
@@ -103,6 +104,7 @@ outputs =
     Dict.fromList
         [ ( "console", Console.publish )
         , ( "file", OutputFile.write )
+        , ( "bluesky", Bluesky.createPost )
         ]
 
 
