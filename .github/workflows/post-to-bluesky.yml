@@ -4,6 +4,23 @@ on:
   schedule:
     - cron: "0 10 * * *"
   workflow_dispatch:
+    inputs:
+      history:
+        description: "History backend (none, file)"
+        default: "file"
+        type: string
+      input:
+        description: "Input source (rss)"
+        default: "rss"
+        type: string
+      transform:
+        description: "Transform (passthrough, groq)"
+        default: "groq"
+        type: string
+      output:
+        description: "Output target (console, file, bluesky)"
+        default: "bluesky"
+        type: string
 
 jobs:
   post:
@@ -17,7 +34,12 @@ jobs:
 
       - run: npm install -g elm elm-pages
 
-      - run: elm-pages run Main --output=bluesky --history=file
+      - run: >-
+          elm-pages run Main
+          --history=${{ inputs.history || 'file' }}
+          --input=${{ inputs.input || 'rss' }}
+          --transform=${{ inputs.transform || 'groq' }}
+          --output=${{ inputs.output || 'bluesky' }}
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
