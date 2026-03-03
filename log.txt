@@ -14,3 +14,6 @@ https://cekrem.github.io/posts/solid-in-fp-single-responsibility/
 
 # 1772273608294
 https://cekrem.github.io/posts/elm-native/
+
+# 1772533726685
+https://cekrem.github.io/posts/solid-in-fp-liskov-substitution/
