@@ -17,3 +17,6 @@ https://cekrem.github.io/posts/elm-native/
 
 # 1772533726685
 https://cekrem.github.io/posts/solid-in-fp-liskov-substitution/
+
+# 1772619926148
+https://cekrem.github.io/posts/elm-book-declarative-dialogs-mutation-observer/
