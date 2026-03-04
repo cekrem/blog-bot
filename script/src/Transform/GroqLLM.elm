@@ -13,6 +13,7 @@ import Transform.Port exposing (Transform)
 run : Transform
 run ( firstPost, _ ) =
     let
+        body : Http.Body
         body =
             firstPost
                 |> formatLLMMessage

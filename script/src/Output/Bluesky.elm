@@ -1,13 +1,11 @@
 module Output.Bluesky exposing (createPost)
 
-import BackendTask exposing (BackendTask)
+import BackendTask
 import BackendTask.Env as Env
 import BackendTask.Http as Http exposing (Body, expectJson)
 import BackendTask.Time as BackendTime
-import Domain.Post exposing (Post)
 import Domain.PublishedPost exposing (toPublished)
-import Domain.SocialPost exposing (SocialPost)
-import FatalError exposing (FatalError)
+import FatalError
 import Iso8601
 import Json.Decode as Decode exposing (Decoder)
 import Json.Encode as Encode
