@@ -5,6 +5,7 @@ import BackendTask.Http
 import Domain.Post exposing (Post)
 import FatalError exposing (FatalError)
 import Input.Port exposing (Input)
+import Utils.Http as HttpUtils
 import Xml.Decode as XD
 
 
@@ -12,7 +13,7 @@ fetch : Input
 fetch =
     BackendTask.Http.get "https://cekrem.github.io/index.xml"
         BackendTask.Http.expectString
-        |> BackendTask.allowFatal
+        |> HttpUtils.logAndAllowFatal
         |> BackendTask.andThen parse
 
 

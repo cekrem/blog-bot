@@ -8,6 +8,7 @@ import Domain.SocialPost exposing (SocialPost)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Encode as Encode
 import Transform.Port exposing (Transform)
+import Utils.Http as HttpUtils
 
 
 run : Transform
@@ -35,7 +36,7 @@ run ( firstPost, _ ) =
                     , timeoutInMs = Just 10000
                     }
                     (Http.expectJson responseDecoder)
-                    |> BackendTask.allowFatal
+                    |> HttpUtils.logAndAllowFatal
             )
         |> BackendTask.map
             (\llmRes ->
@@ -60,8 +61,11 @@ Add the URL where you see fit within the message.
 
 Try to refrain from typical AI-jargon, and keep a casual (and slightly nerdy) tone.
 
-Important: Your answer should be _only_ the social media post content, no introduction before or
-conclusion after. And no surrounding quotes, please, just the exact thing to post on social media.
+The final post should be pure ASCII, with a length under 300 characters (including the URL),
+this is a hard limit!
+
+Important note: Your answer should be _only_ the social media post content, no introduction before or
+conclusion after. And no surrounding quotes(!); just the exact thing to post on social media.
 
 Post follows here:
 
@@ -86,9 +90,15 @@ responseDecoder =
     Decode.field "choices"
         (Decode.oneOrMore (\first _ -> first)
             (Decode.field "message"
-                (Decode.field "content" Decode.string)
+                (Decode.field "content" contentDecoder)
             )
         )
+
+
+contentDecoder : Decoder String
+contentDecoder =
+    Decode.string
+        |> Decode.map (String.replace "\"" "")
 
 
 

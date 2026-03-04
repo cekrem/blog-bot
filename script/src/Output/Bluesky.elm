@@ -5,11 +5,13 @@ import BackendTask.Env as Env
 import BackendTask.Http as Http exposing (Body, expectJson)
 import BackendTask.Time as BackendTime
 import Domain.PublishedPost exposing (toPublished)
+import Domain.SocialPost exposing (SocialPost)
 import FatalError
 import Iso8601
 import Json.Decode as Decode exposing (Decoder)
 import Json.Encode as Encode
 import Output.Port exposing (Output)
+import Utils.Http as HttpUtils
 
 
 createPost : Output
@@ -36,7 +38,7 @@ createPost ( firstPost, _ ) =
                     "https://bsky.social/xrpc/com.atproto.server.createSession"
                     (sessionRequest ( handle, password ))
                     (expectJson (sessionDecoder timestamp))
-                    |> BackendTask.allowFatal
+                    |> HttpUtils.logAndAllowFatal
             )
         -- Create post:
         |> BackendTask.andThen
@@ -48,12 +50,12 @@ createPost ( firstPost, _ ) =
                         [ ( "Authorization", "Bearer " ++ session.token )
                         , ( "Content-Type", "application/json" )
                         ]
-                    , body = createPostRequest session firstPost.body
+                    , body = createPostRequest session firstPost
                     , retries = Just 3
                     , timeoutInMs = Just 10000
                     }
-                    (Http.expectWhatever ())
-                    |> BackendTask.allowFatal
+                    Http.expectString
+                    |> HttpUtils.logAndAllowFatal
             )
         |> BackendTask.map (always ([ firstPost ] |> toPublished))
 
@@ -81,17 +83,46 @@ sessionDecoder timestamp =
         (Decode.field "did" Decode.string)
 
 
-createPostRequest : Session -> String -> Body
-createPostRequest session content =
+createPostRequest : Session -> SocialPost -> Body
+createPostRequest session socialPost =
     Encode.object
         [ ( "repo", Encode.string session.did )
         , ( "collection", Encode.string "app.bsky.feed.post" )
         , ( "record"
           , Encode.object
                 [ ( "$type", Encode.string "app.bsky.feed.post" )
-                , ( "text", Encode.string content )
+                , ( "text", Encode.string socialPost.body )
                 , ( "createdAt", Encode.string session.timestamp )
+                , ( "facets", createFacets socialPost )
                 ]
           )
         ]
         |> Http.jsonBody
+
+
+createFacets : SocialPost -> Encode.Value
+createFacets { body, link } =
+    let
+        linkLength : Int
+        linkLength =
+            String.length link
+    in
+    String.indexes link body
+        |> List.map
+            (\start ->
+                [ ( "features"
+                  , Encode.list Encode.object
+                        [ [ ( "$type", Encode.string "app.bsky.richtext.facet#link" )
+                          , ( "uri", Encode.string link )
+                          ]
+                        ]
+                  )
+                , ( "index"
+                  , Encode.object
+                        [ ( "byteStart", Encode.int start )
+                        , ( "byteEnd", Encode.int (start + linkLength) )
+                        ]
+                  )
+                ]
+            )
+        |> Encode.list Encode.object
