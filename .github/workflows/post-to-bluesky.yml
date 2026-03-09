@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm install -g elm elm-pages
+      - run: npm install -g elm elm-pages lamdera
 
       - uses: actions/cache@v4
         with:
