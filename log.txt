@@ -24,3 +24,6 @@ https://cekrem.github.io/posts/elm-book-declarative-dialogs-mutation-observer/
 
 # 1772622931670
 https://cekrem.github.io/posts/ktor-340-html-fragments-htmx-and-finally-proper-sse-cleanup/
+
+# 1773048648886
+https://cekrem.github.io/posts/why-i-hope-i-get-to-write-a-lot-of-fsharp-in-2026/
