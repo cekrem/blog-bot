@@ -22,9 +22,6 @@ on:
         default: "bluesky"
         type: string
 
-env:
-  ELM_HOME: ${{ github.workspace }}/.elm
-
 permissions:
   contents: write
 
@@ -34,25 +31,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-dotnet@v4
         with:
-          node-version: 20
-
-      - run: npm install -g elm@0.19.1 elm-pages@3.1.5
-
-      - uses: actions/cache@v4
-        with:
-          path: ${{ env.ELM_HOME }}
-          key: elm-${{ hashFiles('script/elm.json') }}
-          restore-keys: |
-            elm-
+          dotnet-version: "10.0.x"
 
       - run: >-
-          elm-pages run Main
-          --history=${{ inputs.history || 'file' }}
-          --input=${{ inputs.input || 'rss' }}
-          --transform=${{ inputs.transform || 'groq' }}
-          --output=${{ inputs.output || 'bluesky' }}
+          dotnet run --project app --
+          --history ${{ inputs.history || 'file' }}
+          --input ${{ inputs.input || 'rss' }}
+          --transform ${{ inputs.transform || 'groq' }}
+          --output ${{ inputs.output || 'bluesky' }}
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}

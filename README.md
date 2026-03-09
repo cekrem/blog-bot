@@ -1,8 +1,8 @@
 # blog-bot
 
-An Elm script that reads my blog's RSS feed, asks an LLM to write a casual promo blurb, and posts it to Bluesky. Runs daily via GitHub Actions, or whenever I feel like hitting the button.
+An F# CLI tool that reads my blog's RSS feed, asks an LLM to write a casual promo blurb, and posts it to Bluesky. Runs daily via GitHub Actions, or whenever I feel like hitting the button.
 
-Later versions will probably be more ~~Skynet~~ autonomous and (e.g.) act on existing posts by replying with relevant content. But definitely not full-on free will bonanza.
+Previously written in Elm (see `script/` for the original elm-pages version). Now rewritten in F# (`app/`).
 
 ## How it works
 
@@ -13,12 +13,12 @@ It's a pipeline with four pluggable stages:
 3. **Transform** -- sends the latest unshared post to [Groq](https://groq.com/) (Llama 3.3 70B) to generate a social media-friendly blurb
 4. **Output** -- posts the result to Bluesky (or console/file for testing)
 
-Each stage is swappable via CLI flags. The whole thing is built with [elm-pages](https://elm-pages.com/) scripts and runs as a `BackendTask` pipeline.
+Each stage is swappable via CLI flags.
 
 ## Usage
 
 ```bash
-elm-pages run Main --input=rss --transform=groq --output=bluesky --history=file
+dotnet run --project app -- --input=rss --transform=groq --output=bluesky --history=file
 ```
 
 All flags are optional and have defaults:
@@ -28,15 +28,13 @@ All flags are optional and have defaults:
 | `--input`     | `rss`                        | `rss`   |
 | `--transform` | `groq`, `passthrough`        | `groq`  |
 | `--output`    | `bluesky`, `console`, `file` | `file`  |
-| `--history`   | `file`, `none`               | `none`  |
+| `--history`   | `file`, `none`               | `file`  |
 
-So for local testing you can just do:
+For local testing:
 
 ```bash
-elm-pages run Main
+dotnet run --project app -- --output=console --history=none
 ```
-
-...and it'll fetch the RSS, run it through Groq, and write the result to a file. No Bluesky credentials needed.
 
 ## Environment variables
 
@@ -59,19 +57,14 @@ Secrets are configured in the repo settings.
 ## Project structure
 
 ```
-script/
-  src/
-    Main.elm            -- CLI entry point, wires up the pipeline
-    Pipeline.elm        -- the actual read -> filter -> transform -> output -> log flow
-    Input/Rss.elm       -- parses the blog RSS feed
-    Transform/GroqLLM.elm     -- LLM-powered blurb generation
-    Transform/PassThrough.elm -- no-op transform (for testing)
-    Output/Bluesky.elm  -- posts to Bluesky via AT Protocol
-    Output/Console.elm  -- prints to stdout
-    Output/File.elm     -- writes to a file
-    History/LogFile.elm -- tracks shared posts in log.txt
-    History/NoHistory.elm     -- no-op history (re-shares everything)
-    Domain/Post.elm           -- blog post (title, link, description)
-    Domain/SocialPost.elm     -- transformed post (body, link)
-    Domain/PublishedPost.elm  -- just the link, for deduplication
+app/                          -- F# application (current)
+  Domain.fs                   -- Post, SocialPost, PublishedPost types
+  Pipeline.fs                 -- read -> filter -> transform -> output -> log flow
+  Input.fs                    -- RSS feed fetcher
+  Transform.fs                -- Groq LLM + passthrough transforms
+  Output.fs                   -- Bluesky, console, and file outputs
+  History.fs                  -- log.txt deduplication + no-op history
+  Program.fs                  -- CLI entry point (Argu)
+
+script/                       -- original Elm version (legacy)
 ```
