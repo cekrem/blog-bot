@@ -27,3 +27,7 @@ https://cekrem.github.io/posts/ktor-340-html-fragments-htmx-and-finally-proper-s
 
 # 1773048648886
 https://cekrem.github.io/posts/why-i-hope-i-get-to-write-a-lot-of-fsharp-in-2026/
+
+
+# 1773061301767
+https://cekrem.github.io/posts/elm-book-testing-strategies/
