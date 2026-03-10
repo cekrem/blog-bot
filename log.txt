@@ -31,3 +31,7 @@ https://cekrem.github.io/posts/why-i-hope-i-get-to-write-a-lot-of-fsharp-in-2026
 
 # 1773061301767
 https://cekrem.github.io/posts/elm-book-testing-strategies/
+
+
+# 1773138497648
+https://cekrem.github.io/posts/donn-disippel-finally-in-english/
