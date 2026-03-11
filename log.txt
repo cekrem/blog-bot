@@ -35,3 +35,7 @@ https://cekrem.github.io/posts/elm-book-testing-strategies/
 
 # 1773138497648
 https://cekrem.github.io/posts/donn-disippel-finally-in-english/
+
+
+# 1773224925114
+https://cekrem.github.io/posts/programming-as-theory-building-part-ii/
