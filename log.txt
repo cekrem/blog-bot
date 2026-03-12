@@ -39,3 +39,7 @@ https://cekrem.github.io/posts/donn-disippel-finally-in-english/
 
 # 1773224925114
 https://cekrem.github.io/posts/programming-as-theory-building-part-ii/
+
+
+# 1773311332466
+https://cekrem.github.io/posts/arrow-either-kotlin-functors-monads/
