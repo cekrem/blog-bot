@@ -43,3 +43,7 @@ https://cekrem.github.io/posts/programming-as-theory-building-part-ii/
 
 # 1773311332466
 https://cekrem.github.io/posts/arrow-either-kotlin-functors-monads/
+
+
+# 1773397503082
+https://cekrem.github.io/posts/solid-in-fp-interface-segregation/
