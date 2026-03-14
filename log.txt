@@ -47,3 +47,7 @@ https://cekrem.github.io/posts/arrow-either-kotlin-functors-monads/
 
 # 1773397503082
 https://cekrem.github.io/posts/solid-in-fp-interface-segregation/
+
+
+# 1773483471647
+https://cekrem.github.io/posts/functors-applicatives-monads-elm/
