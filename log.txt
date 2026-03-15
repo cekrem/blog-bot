@@ -51,3 +51,7 @@ https://cekrem.github.io/posts/solid-in-fp-interface-segregation/
 
 # 1773483471647
 https://cekrem.github.io/posts/functors-applicatives-monads-elm/
+
+
+# 1773569913384
+https://cekrem.github.io/posts/elm-on-the-backend-with-nodejs/
