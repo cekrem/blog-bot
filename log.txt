@@ -55,3 +55,7 @@ https://cekrem.github.io/posts/functors-applicatives-monads-elm/
 
 # 1773569913384
 https://cekrem.github.io/posts/elm-on-the-backend-with-nodejs/
+
+
+# 1773657825641
+https://cekrem.github.io/posts/typescript-goes-go/
