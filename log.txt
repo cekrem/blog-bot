@@ -63,3 +63,7 @@ https://cekrem.github.io/posts/typescript-goes-go/
 
 # 1773743979779
 https://cekrem.github.io/posts/how-i-met-jesus/
+
+
+# 1773830438481
+https://cekrem.github.io/posts/tailwind-targeting-child-elements/
