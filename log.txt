@@ -71,3 +71,7 @@ https://cekrem.github.io/posts/tailwind-targeting-child-elements/
 
 # 1773916170591
 https://cekrem.github.io/posts/elm-form/
+
+
+# 1774002461888
+https://cekrem.github.io/posts/the-fp-article-i-cant-seem-to-finish/
