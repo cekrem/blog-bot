@@ -75,3 +75,7 @@ https://cekrem.github.io/posts/elm-form/
 
 # 1774002461888
 https://cekrem.github.io/posts/the-fp-article-i-cant-seem-to-finish/
+
+
+# 1774088154531
+https://cekrem.github.io/posts/elm-book-chapter-9-organizing-files-and-modules/
