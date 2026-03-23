@@ -83,3 +83,7 @@ https://cekrem.github.io/posts/elm-book-chapter-9-organizing-files-and-modules/
 
 # 1774174592141
 https://cekrem.github.io/posts/elm-book-missing-chapter-8-ports-interop/
+
+
+# 1774262563901
+https://cekrem.github.io/posts/im-taking-a-three-week-llm-fast/
