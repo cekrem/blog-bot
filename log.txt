@@ -87,3 +87,7 @@ https://cekrem.github.io/posts/elm-book-missing-chapter-8-ports-interop/
 
 # 1774262563901
 https://cekrem.github.io/posts/im-taking-a-three-week-llm-fast/
+
+
+# 1774348815275
+https://cekrem.github.io/posts/clipboard-api-how-hard-can-it-be/
