@@ -91,3 +91,7 @@ https://cekrem.github.io/posts/im-taking-a-three-week-llm-fast/
 
 # 1774348815275
 https://cekrem.github.io/posts/clipboard-api-how-hard-can-it-be/
+
+
+# 1774435091659
+https://cekrem.github.io/posts/book-update-almost-there/
