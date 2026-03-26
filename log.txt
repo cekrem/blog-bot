@@ -95,3 +95,7 @@ https://cekrem.github.io/posts/clipboard-api-how-hard-can-it-be/
 
 # 1774435091659
 https://cekrem.github.io/posts/book-update-almost-there/
+
+
+# 1774521723424
+https://cekrem.github.io/posts/why-typescript-wont-save-you/
