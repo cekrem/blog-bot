@@ -99,3 +99,7 @@ https://cekrem.github.io/posts/book-update-almost-there/
 
 # 1774521723424
 https://cekrem.github.io/posts/why-typescript-wont-save-you/
+
+
+# 1774607847424
+https://cekrem.github.io/posts/chapter-2-take-2/
