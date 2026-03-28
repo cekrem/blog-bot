@@ -103,3 +103,7 @@ https://cekrem.github.io/posts/why-typescript-wont-save-you/
 
 # 1774607847424
 https://cekrem.github.io/posts/chapter-2-take-2/
+
+
+# 1774693301597
+https://cekrem.github.io/posts/elm-book-announcement/
