@@ -107,3 +107,7 @@ https://cekrem.github.io/posts/chapter-2-take-2/
 
 # 1774693301597
 https://cekrem.github.io/posts/elm-book-announcement/
+
+
+# 1774779707747
+https://cekrem.github.io/posts/why-you-probably-shouldnt-use-my-elm-land-fork/
