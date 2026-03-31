@@ -115,3 +115,7 @@ https://cekrem.github.io/posts/why-you-probably-shouldnt-use-my-elm-land-fork/
 
 # 1774868020558
 https://cekrem.github.io/posts/elm-land-shared-subscriptions-and-the-art-of-workarounds/
+
+
+# 1774953802529
+https://cekrem.github.io/posts/my-new-project/
