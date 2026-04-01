@@ -119,3 +119,7 @@ https://cekrem.github.io/posts/elm-land-shared-subscriptions-and-the-art-of-work
 
 # 1774953802529
 https://cekrem.github.io/posts/my-new-project/
+
+
+# 1775040274966
+https://cekrem.github.io/posts/fighting-for-brain-heart-and-sleep/
