@@ -123,3 +123,7 @@ https://cekrem.github.io/posts/my-new-project/
 
 # 1775040274966
 https://cekrem.github.io/posts/fighting-for-brain-heart-and-sleep/
+
+
+# 1775126510121
+https://cekrem.github.io/posts/the-discipline-of-constraints-elm-usereducer-lessons/
