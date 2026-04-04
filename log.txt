@@ -131,3 +131,7 @@ https://cekrem.github.io/posts/the-discipline-of-constraints-elm-usereducer-less
 
 # 1775212418930
 https://cekrem.github.io/posts/html-helpers-2-0-0-for-elm/
+
+
+# 1775298175980
+https://cekrem.github.io/posts/the-subtle-art-of-taming-flows-and-coroutines-in-kotlin/
