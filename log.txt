@@ -135,3 +135,7 @@ https://cekrem.github.io/posts/html-helpers-2-0-0-for-elm/
 
 # 1775298175980
 https://cekrem.github.io/posts/the-subtle-art-of-taming-flows-and-coroutines-in-kotlin/
+
+
+# 1775384573375
+https://cekrem.github.io/posts/compiler-driven-development-elm-playground/
