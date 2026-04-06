@@ -139,3 +139,7 @@ https://cekrem.github.io/posts/the-subtle-art-of-taming-flows-and-coroutines-in-
 
 # 1775384573375
 https://cekrem.github.io/posts/compiler-driven-development-elm-playground/
+
+
+# 1775472387807
+https://cekrem.github.io/posts/making-impossible-states-impossible-with-functional-dependency-injection/
