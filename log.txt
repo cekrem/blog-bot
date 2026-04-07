@@ -143,3 +143,7 @@ https://cekrem.github.io/posts/compiler-driven-development-elm-playground/
 
 # 1775472387807
 https://cekrem.github.io/posts/making-impossible-states-impossible-with-functional-dependency-injection/
+
+
+# 1775558742046
+https://cekrem.github.io/posts/parse-dont-validate-typescript/
