@@ -147,3 +147,7 @@ https://cekrem.github.io/posts/making-impossible-states-impossible-with-function
 
 # 1775558742046
 https://cekrem.github.io/posts/parse-dont-validate-typescript/
+
+
+# 1775645307002
+https://cekrem.github.io/posts/kotlin-rich-errors-elm-union-types/
