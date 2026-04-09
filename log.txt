@@ -151,3 +151,7 @@ https://cekrem.github.io/posts/parse-dont-validate-typescript/
 
 # 1775645307002
 https://cekrem.github.io/posts/kotlin-rich-errors-elm-union-types/
+
+
+# 1775731906296
+https://cekrem.github.io/posts/arktype-parse-dont-validate-sequel/
