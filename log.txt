@@ -159,3 +159,7 @@ https://cekrem.github.io/posts/arktype-parse-dont-validate-sequel/
 
 # 1775817783431
 https://cekrem.github.io/posts/no-ai-in-nodejs-core/
+
+
+# 1775902954224
+https://cekrem.github.io/posts/on-the-value-of-abstractions/
