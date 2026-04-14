@@ -171,3 +171,7 @@ https://cekrem.github.io/posts/craftsman-mindset/
 
 # 1776078483528
 https://cekrem.github.io/posts/tailwind-intellisense-elm-neovim/
+
+
+# 1776164105688
+https://cekrem.github.io/posts/effect-without-effect-ts/
