@@ -175,3 +175,7 @@ https://cekrem.github.io/posts/tailwind-intellisense-elm-neovim/
 
 # 1776164105688
 https://cekrem.github.io/posts/effect-without-effect-ts/
+
+
+# 1776250287251
+https://cekrem.github.io/posts/the-draft-is-done-now-i-need-readers/
