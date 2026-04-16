@@ -179,3 +179,7 @@ https://cekrem.github.io/posts/effect-without-effect-ts/
 
 # 1776250287251
 https://cekrem.github.io/posts/the-draft-is-done-now-i-need-readers/
+
+
+# 1776336854576
+https://cekrem.github.io/posts/programming-as-theory-building-naur/
