@@ -183,3 +183,7 @@ https://cekrem.github.io/posts/the-draft-is-done-now-i-need-readers/
 
 # 1776336854576
 https://cekrem.github.io/posts/programming-as-theory-building-naur/
+
+
+# 1776422724999
+https://cekrem.github.io/posts/pragmatic-hacks-search-widget-elm/
