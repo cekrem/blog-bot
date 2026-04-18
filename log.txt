@@ -187,3 +187,7 @@ https://cekrem.github.io/posts/programming-as-theory-building-naur/
 
 # 1776422724999
 https://cekrem.github.io/posts/pragmatic-hacks-search-widget-elm/
+
+
+# 1776508213986
+https://cekrem.github.io/posts/claude-code-game-changer-or-just-hype/
