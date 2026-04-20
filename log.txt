@@ -195,3 +195,7 @@ https://cekrem.github.io/posts/claude-code-game-changer-or-just-hype/
 
 # 1776594609093
 https://cekrem.github.io/posts/starting-small-with-elm-a-widget-approach/
+
+
+# 1776683446796
+https://cekrem.github.io/posts/passion/
