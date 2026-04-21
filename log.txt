@@ -199,3 +199,7 @@ https://cekrem.github.io/posts/starting-small-with-elm-a-widget-approach/
 
 # 1776683446796
 https://cekrem.github.io/posts/passion/
+
+
+# 1776769067545
+https://cekrem.github.io/posts/git-history-git-2-54/
