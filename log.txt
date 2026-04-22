@@ -203,3 +203,7 @@ https://cekrem.github.io/posts/passion/
 
 # 1776769067545
 https://cekrem.github.io/posts/git-history-git-2-54/
+
+
+# 1776855381899
+https://cekrem.github.io/posts/a-case-for-port-boundaries-in-frontend/
