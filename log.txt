@@ -207,3 +207,7 @@ https://cekrem.github.io/posts/git-history-git-2-54/
 
 # 1776855381899
 https://cekrem.github.io/posts/a-case-for-port-boundaries-in-frontend/
+
+
+# 1776942004626
+https://cekrem.github.io/posts/dependency-inversion-in-react/
