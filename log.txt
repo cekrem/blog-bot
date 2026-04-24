@@ -211,3 +211,7 @@ https://cekrem.github.io/posts/a-case-for-port-boundaries-in-frontend/
 
 # 1776942004626
 https://cekrem.github.io/posts/dependency-inversion-in-react/
+
+
+# 1777028263353
+https://cekrem.github.io/posts/llms-corrupt-your-documents/
