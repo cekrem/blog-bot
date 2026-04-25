@@ -215,3 +215,7 @@ https://cekrem.github.io/posts/dependency-inversion-in-react/
 
 # 1777028263353
 https://cekrem.github.io/posts/llms-corrupt-your-documents/
+
+
+# 1777113224828
+https://cekrem.github.io/posts/psychology-of-clean-code/
