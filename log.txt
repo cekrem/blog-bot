@@ -219,3 +219,7 @@ https://cekrem.github.io/posts/llms-corrupt-your-documents/
 
 # 1777113224828
 https://cekrem.github.io/posts/psychology-of-clean-code/
+
+
+# 1777199739070
+https://cekrem.github.io/posts/introducing-html-helpers-for-elm/
