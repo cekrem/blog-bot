@@ -223,3 +223,7 @@ https://cekrem.github.io/posts/psychology-of-clean-code/
 
 # 1777199739070
 https://cekrem.github.io/posts/introducing-html-helpers-for-elm/
+
+
+# 1777289377942
+https://cekrem.github.io/posts/coding-as-craft-going-back-to-the-old-gym/
