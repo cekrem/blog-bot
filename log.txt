@@ -227,3 +227,7 @@ https://cekrem.github.io/posts/introducing-html-helpers-for-elm/
 
 # 1777289377942
 https://cekrem.github.io/posts/coding-as-craft-going-back-to-the-old-gym/
+
+
+# 1777375827117
+https://cekrem.github.io/posts/react-reconciliation-deep-dive/
