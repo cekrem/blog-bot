@@ -231,3 +231,7 @@ https://cekrem.github.io/posts/coding-as-craft-going-back-to-the-old-gym/
 
 # 1777375827117
 https://cekrem.github.io/posts/react-reconciliation-deep-dive/
+
+
+# 1777461777515
+https://cekrem.github.io/posts/react-memo-when-it-helps-when-it-hurts/
