@@ -239,3 +239,7 @@ https://cekrem.github.io/posts/react-memo-when-it-helps-when-it-hurts/
 
 # 1777548134542
 https://cekrem.github.io/posts/content-visibility-auto-performance/
+
+
+# 1777633223619
+https://cekrem.github.io/posts/elm-ports-with-web-components/
