@@ -243,3 +243,7 @@ https://cekrem.github.io/posts/content-visibility-auto-performance/
 
 # 1777633223619
 https://cekrem.github.io/posts/elm-ports-with-web-components/
+
+
+# 1777718434136
+https://cekrem.github.io/posts/feedback-one-elm-rust-feedback-widget/
