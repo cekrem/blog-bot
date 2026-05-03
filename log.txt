@@ -247,3 +247,7 @@ https://cekrem.github.io/posts/elm-ports-with-web-components/
 
 # 1777718434136
 https://cekrem.github.io/posts/feedback-one-elm-rust-feedback-widget/
+
+
+# 1777804988247
+https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/
