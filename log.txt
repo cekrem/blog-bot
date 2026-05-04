@@ -251,3 +251,7 @@ https://cekrem.github.io/posts/feedback-one-elm-rust-feedback-widget/
 
 # 1777804988247
 https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimization/
+
+
+# 1777894879423
+https://cekrem.github.io/posts/architecture-by-autocomplete/
