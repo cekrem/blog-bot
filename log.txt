@@ -255,3 +255,7 @@ https://cekrem.github.io/posts/beyond-react-memo-smarter-performance-optimizatio
 
 # 1777894879423
 https://cekrem.github.io/posts/architecture-by-autocomplete/
+
+
+# 1777979355211
+https://cekrem.github.io/posts/why-i-hope-i-get-to-write-a-lot-of-elm-code-in-2025/
