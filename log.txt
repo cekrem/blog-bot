@@ -263,3 +263,7 @@ https://cekrem.github.io/posts/why-i-hope-i-get-to-write-a-lot-of-elm-code-in-20
 
 # 1778067762193
 https://cekrem.github.io/posts/refactoring-towards-cleaner-boundaries/
+
+
+# 1778154096591
+https://cekrem.github.io/posts/elm-book-rc-2/
