@@ -271,3 +271,7 @@ https://cekrem.github.io/posts/elm-book-rc-2/
 
 # 1778238073782
 https://cekrem.github.io/posts/double-loop-tdd-blog-engine-pt2/
+
+
+# 1778323516706
+https://cekrem.github.io/posts/replacing-hugo-with-kotlin-clean-architecture/
