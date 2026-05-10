@@ -275,3 +275,7 @@ https://cekrem.github.io/posts/double-loop-tdd-blog-engine-pt2/
 
 # 1778323516706
 https://cekrem.github.io/posts/replacing-hugo-with-kotlin-clean-architecture/
+
+
+# 1778410405272
+https://cekrem.github.io/posts/single-responsibility-principle-in-react/
