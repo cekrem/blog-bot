@@ -283,3 +283,7 @@ https://cekrem.github.io/posts/single-responsibility-principle-in-react/
 
 # 1778502817697
 https://cekrem.github.io/posts/a-use-case-for-usecases-in-kotlin/
+
+
+# 1778586356600
+https://cekrem.github.io/posts/canonicalise-dont-remember-kotlin/
