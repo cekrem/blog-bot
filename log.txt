@@ -291,3 +291,7 @@ https://cekrem.github.io/posts/canonicalise-dont-remember-kotlin/
 
 # 1778673214528
 https://cekrem.github.io/resume/
+
+
+# 1778758942264
+https://cekrem.github.io/posts/greentype-lamdera/
