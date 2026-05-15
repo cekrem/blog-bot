@@ -295,3 +295,7 @@ https://cekrem.github.io/resume/
 
 # 1778758942264
 https://cekrem.github.io/posts/greentype-lamdera/
+
+
+# 1778845539360
+https://cekrem.github.io/posts/open-closed-principle-in-react/
