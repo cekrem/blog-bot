@@ -299,3 +299,7 @@ https://cekrem.github.io/posts/greentype-lamdera/
 
 # 1778845539360
 https://cekrem.github.io/posts/open-closed-principle-in-react/
+
+
+# 1778928804810
+https://cekrem.github.io/posts/liskov-substitution-the-real-meaning-of-inheritance/
