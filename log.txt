@@ -303,3 +303,7 @@ https://cekrem.github.io/posts/open-closed-principle-in-react/
 
 # 1778928804810
 https://cekrem.github.io/posts/liskov-substitution-the-real-meaning-of-inheritance/
+
+
+# 1779015476764
+https://cekrem.github.io/posts/the-one-book-i-want-my-future-manager-to-read/
