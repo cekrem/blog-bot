@@ -311,3 +311,7 @@ https://cekrem.github.io/posts/the-one-book-i-want-my-future-manager-to-read/
 
 # 1779109150487
 https://cekrem.github.io/posts/if-you-re-running-claude-code-run-it-in-a-box/
+
+
+# 1779194008598
+https://cekrem.github.io/posts/the-tacit-dimension/
