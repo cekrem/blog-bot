@@ -315,3 +315,7 @@ https://cekrem.github.io/posts/if-you-re-running-claude-code-run-it-in-a-box/
 
 # 1779194008598
 https://cekrem.github.io/posts/the-tacit-dimension/
+
+
+# 1779279246803
+https://cekrem.github.io/posts/interface-segregation-in-practice/
