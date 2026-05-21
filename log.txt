@@ -319,3 +319,7 @@ https://cekrem.github.io/posts/the-tacit-dimension/
 
 # 1779279246803
 https://cekrem.github.io/posts/interface-segregation-in-practice/
+
+
+# 1779367069539
+https://cekrem.github.io/posts/clean-architecture-and-plugins-in-go/
