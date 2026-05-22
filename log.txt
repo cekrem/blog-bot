@@ -323,3 +323,7 @@ https://cekrem.github.io/posts/interface-segregation-in-practice/
 
 # 1779367069539
 https://cekrem.github.io/posts/clean-architecture-and-plugins-in-go/
+
+
+# 1779451899027
+https://cekrem.github.io/posts/books-i-think-software-engineers-should-read/
