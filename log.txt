@@ -327,3 +327,7 @@ https://cekrem.github.io/posts/clean-architecture-and-plugins-in-go/
 
 # 1779451899027
 https://cekrem.github.io/posts/books-i-think-software-engineers-should-read/
+
+
+# 1779534192467
+https://cekrem.github.io/posts/i-made-learnelm-dev/
