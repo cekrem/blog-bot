@@ -331,3 +331,7 @@ https://cekrem.github.io/posts/books-i-think-software-engineers-should-read/
 
 # 1779534192467
 https://cekrem.github.io/posts/i-made-learnelm-dev/
+
+
+# 1779620758021
+https://cekrem.github.io/posts/im-joining-enso/
