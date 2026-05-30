@@ -347,3 +347,7 @@ https://cekrem.github.io/posts/math-test-for-home-schooling/
 
 # 1780058351900
 https://cekrem.github.io/posts/turbo-tape-ai-ep/
+
+
+# 1780139458609
+https://cekrem.github.io/posts/hejlsberg-on-ai/
