@@ -351,3 +351,7 @@ https://cekrem.github.io/posts/turbo-tape-ai-ep/
 
 # 1780139458609
 https://cekrem.github.io/posts/hejlsberg-on-ai/
+
+
+# 1780226730080
+https://cekrem.github.io/posts/back-to-the-old-gym/
