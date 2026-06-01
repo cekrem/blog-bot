@@ -355,3 +355,7 @@ https://cekrem.github.io/posts/hejlsberg-on-ai/
 
 # 1780226730080
 https://cekrem.github.io/posts/back-to-the-old-gym/
+
+
+# 1780328776748
+https://cekrem.github.io/posts/do-more-stuff-cli-tool-part-2/
