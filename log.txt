@@ -359,3 +359,7 @@ https://cekrem.github.io/posts/back-to-the-old-gym/
 
 # 1780328776748
 https://cekrem.github.io/posts/do-more-stuff-cli-tool-part-2/
+
+
+# 1780407965832
+https://cekrem.github.io/posts/codimg/
