@@ -371,3 +371,7 @@ https://cekrem.github.io/posts/do-more-stuff-cli-tool-part-1/
 
 # 1780576605654
 https://cekrem.github.io/posts/the-end-of-an-era/
+
+
+# 1780662623060
+https://cekrem.github.io/posts/devplan/
