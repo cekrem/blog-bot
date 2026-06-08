@@ -383,3 +383,7 @@ https://cekrem.github.io/posts/why-im-not-using-the-lightphone-ii/
 
 # 1780832480440
 https://cekrem.github.io/posts/ripnote/
+
+
+# 1780927042575
+https://cekrem.github.io/posts/native-elm/
