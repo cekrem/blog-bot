@@ -387,3 +387,7 @@ https://cekrem.github.io/posts/ripnote/
 
 # 1780927042575
 https://cekrem.github.io/posts/native-elm/
+
+
+# 1781008207120
+https://cekrem.github.io/posts/changing-jobs-without-leaving-your-company/
