@@ -391,3 +391,7 @@ https://cekrem.github.io/posts/native-elm/
 
 # 1781008207120
 https://cekrem.github.io/posts/changing-jobs-without-leaving-your-company/
+
+
+# 1781095671106
+https://cekrem.github.io/posts/reducing-android-build-times-on-azure-by-80/
