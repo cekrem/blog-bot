@@ -395,3 +395,7 @@ https://cekrem.github.io/posts/changing-jobs-without-leaving-your-company/
 
 # 1781095671106
 https://cekrem.github.io/posts/reducing-android-build-times-on-azure-by-80/
+
+
+# 1781185807594
+https://cekrem.github.io/posts/react-advent-calendar/
