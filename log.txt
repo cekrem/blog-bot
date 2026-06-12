@@ -399,3 +399,7 @@ https://cekrem.github.io/posts/reducing-android-build-times-on-azure-by-80/
 
 # 1781185807594
 https://cekrem.github.io/posts/react-advent-calendar/
+
+
+# 1781268485279
+https://cekrem.github.io/hire/
