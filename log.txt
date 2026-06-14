@@ -407,3 +407,7 @@ https://cekrem.github.io/hire/
 
 # 1781351133322
 https://cekrem.github.io/posts/create-elm-live-app/
+
+
+# 1781437698049
+https://cekrem.github.io/about/
