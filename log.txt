@@ -411,3 +411,7 @@ https://cekrem.github.io/posts/create-elm-live-app/
 
 # 1781437698049
 https://cekrem.github.io/about/
+
+
+# 1781537722654
+https://cekrem.github.io/posts/explaining-functional-programming-to-non-programmers/
