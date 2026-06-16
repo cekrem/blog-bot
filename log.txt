@@ -415,3 +415,7 @@ https://cekrem.github.io/about/
 
 # 1781537722654
 https://cekrem.github.io/posts/explaining-functional-programming-to-non-programmers/
+
+
+# 1781621465236
+https://cekrem.github.io/posts/git-report/
