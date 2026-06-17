@@ -419,3 +419,7 @@ https://cekrem.github.io/posts/explaining-functional-programming-to-non-programm
 
 # 1781621465236
 https://cekrem.github.io/posts/git-report/
+
+
+# 1781703297770
+https://cekrem.github.io/thank-you-for-subscribing/
