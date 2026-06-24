@@ -423,3 +423,7 @@ https://cekrem.github.io/posts/git-report/
 
 # 1781703297770
 https://cekrem.github.io/thank-you-for-subscribing/
+
+
+# 1782303167238
+https://cekrem.github.io/posts/elm-run-batch-job/
