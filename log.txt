@@ -443,3 +443,7 @@ https://cekrem.github.io/posts/new-season-upgrades-vol-1-leaving-gmail/
 
 # 1786704393547
 https://cekrem.github.io/posts/there-is-still-no-silver-bullet/
+
+
+# 1787567193912
+https://cekrem.github.io/posts/bun-and-elm-are-friends/
