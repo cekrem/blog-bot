@@ -48,7 +48,7 @@ Post url: {post.Link}
             Encode.object
                 [ "messages",
                   Encode.list [ Encode.object [ "content", Encode.string prompt; "role", Encode.string "user" ] ]
-                  "model", Encode.string "llama-3.3-70b-versatile" ]
+                  "model", Encode.string "groq/compound-mini" ]
             |> Encode.toString 0
 
         let private decodeResponse (json: string) =

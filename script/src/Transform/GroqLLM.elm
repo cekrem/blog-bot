@@ -120,7 +120,7 @@ encodeBody message =
                     |> List.singleton
                 )
           )
-        , ( "model", Encode.string "llama-3.3-70b-versatile" )
+        , ( "model", Encode.string "groq/compound-mini" )
         ]
         |> Http.jsonBody
 
