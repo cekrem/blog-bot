@@ -451,3 +451,7 @@ https://cekrem.github.io/posts/bun-and-elm-are-friends/
 
 # 1787653219456
 https://cekrem.github.io/posts/og-images-as-elm-code/
+
+
+# 1787739778068
+https://cekrem.github.io/posts/bun-plugin-elm/
