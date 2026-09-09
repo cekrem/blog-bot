@@ -455,3 +455,7 @@ https://cekrem.github.io/posts/og-images-as-elm-code/
 
 # 1787739778068
 https://cekrem.github.io/posts/bun-plugin-elm/
+
+
+# 1788962417899
+https://cekrem.github.io/posts/new-season-upgrades-vol-2-new-newsletter-platform/
