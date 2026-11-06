@@ -1,3 +1,5 @@
 elm-stuff/
 **/*/elm-stuff/
 output.txt
+dist-newstyle/
+fsharp
